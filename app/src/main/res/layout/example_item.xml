@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardCornerRadius="4dp"
+    android:id="@+id/CardView"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/tvNume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescriere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvStare"
+            android:text="Line 2"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvStare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvNume"
+            android:text="Stare"
+            android:textColor="@color/primary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvPretStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvPretCurent"
+            android:layout_alignLeft="@+id/tvPretBuyout"
+            android:layout_alignStart="@+id/tvPretBuyout"
+            android:text="Line 3"
+            android:textSize="20sp"
+            tools:text="Pret de start" />
+
+        <TextView
+            android:id="@+id/tvPretCurent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvPretBuyout"
+            android:layout_alignLeft="@+id/tvPretStart"
+            android:layout_alignStart="@+id/tvPretStart"
+            android:text="Line 4"
+            android:textSize="20sp"
+            tools:text="Pret curent" />
+
+        <TextView
+            android:id="@+id/tvPretBuyout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:text="Line 5"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            tools:text="Pret buyout" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
